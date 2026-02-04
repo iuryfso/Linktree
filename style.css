@@ -11,19 +11,18 @@ body {
 }
 
 .fundo {
-position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: translate(-50%, -50%);
-  z-index: -1;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100svh;
+    z-index: -1;
+    overflow: hidden;
+    background: black;
 }
 
 .container {
     background: #d923b1;
-    background: linear-gradient(90deg,rgba(217, 35, 177, 0.97) 0%, rgba(235, 235, 235, 0.37) 100%);
+    background: linear-gradient(90deg, rgba(217, 35, 177, 0.97) 0%, rgba(235, 235, 235, 0.37) 100%);
     padding: 20px;
     text-align: center;
     width: 300px;
@@ -33,7 +32,7 @@ position: absolute;
 }
 
 .container:hover {
-    background-color:#d83fb7;
+    background-color: #d83fb7;
     padding: 20px;
     text-align: center;
     transition: 1.2s;
@@ -58,7 +57,7 @@ position: absolute;
     padding: 10px;
     gap: 10px;
     background: #000000;
-    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(153, 104, 104, 0.34) 99%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(153, 104, 104, 0.34) 99%);
     margin-top: 5px;
     border-radius: 10px;
     text-decoration: none;
